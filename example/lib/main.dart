@@ -14,16 +14,15 @@ class Demo extends StatelessWidget {
       child: Center(
           child: Text(
         "${context.isLandscape}, \n"
-        "${context.pixels},\n"
-        "${context.width},\n"
-        "${context.height},\n"
-        "${context.diagonal},\n"
-        "${context.pixels},\n"
-        "${context.inches},\n"
+        "${context.sizePixels},\n"
+        "${context.widthPixels},\n"
+        "${context.heightPixels},\n"
+        "${context.diagonalPixels},\n"
+        "${context.sizeInches},\n"
         "${context.widthInches},\n"
         "${context.heightInches},\n"
         "${context.diagonalInches},\n"
-        "${context.inches},\n"
+        "${context.sizeInches},\n"
         "${context.mq.padding},\n",
       )),
     );
