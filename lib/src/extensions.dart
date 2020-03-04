@@ -10,22 +10,22 @@ extension SizedContext on BuildContext {
   bool get isLandscape => mq.orientation == Orientation.landscape;
 
   //PIXELS
-  Size get sizePixels => mq.size;
-  double get widthPixels => sizePixels.width;
-  double get heightPixels => sizePixels.height;
+  Size get sizePx => mq.size;
+  double get widthPx => sizePx.width;
+  double get heightPx => sizePx.height;
 
-  double get diagonalPixels {
-    final Size s = sizePixels;
+  double get diagonalPx {
+    final Size s = sizePx;
     return sqrt((s.width * s.width) + (s.height * s.height));
   }
 
   //PIXELS
   Size get sizeInches {
-    final Size pxSize = sizePixels;
+    final Size pxSize = sizePx;
     return Size(pxSize.width / 96, pxSize.height / 96);
   }
 
   double get widthInches => sizeInches.width;
   double get heightInches => sizeInches.height;
-  double get diagonalInches => diagonalPixels / 96;
+  double get diagonalInches => diagonalPx / 96;
 }

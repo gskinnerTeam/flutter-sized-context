@@ -14,10 +14,10 @@ class Demo extends StatelessWidget {
       child: Center(
           child: Text(
         "${context.isLandscape}, \n"
-        "${context.sizePixels},\n"
-        "${context.widthPixels},\n"
-        "${context.heightPixels},\n"
-        "${context.diagonalPixels},\n"
+        "${context.sizePx},\n"
+        "${context.widthPx},\n"
+        "${context.heightPx},\n"
+        "${context.diagonalPx},\n"
         "${context.sizeInches},\n"
         "${context.widthInches},\n"
         "${context.heightInches},\n"
