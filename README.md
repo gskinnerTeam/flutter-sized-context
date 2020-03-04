@@ -3,7 +3,7 @@
 With this extension package you can easily access the MediaQuery sizing info directly on the build context:
 
 ```dart
-Size width = context.pixels;
+Size size = context.sizePx;
 ```
 
 It also provides additional convenience methods like landscape state, diagonal screen size and inch-based measurements:
@@ -11,7 +11,7 @@ It also provides additional convenience methods like landscape state, diagonal s
 ```dart
 bool isLandscape = context.isLandscape; //Instead of: MediaQuery.of(context).orientation == Orientation.landscape
 bool isTablet = context.diagonalInches >= 7; //Get physical device size in inches 
-bool useSingleColumn = context.width < 400; //Access .width and .height directly, no need to go throug .size
+bool useSingleColumn = context.widthPx < 400; //Access .width and .height directly, no need to go throug .size
 ```
 
 ## 🎖 Installation
@@ -31,10 +31,10 @@ import 'package:media_query_context/media_query_context.dart';
 ```dart
 bool isLandscape = context.isLandscape;
 //PIXELS
-Size size = context.sizePixels;
-double width = context.width;
-double height = context.height;
-double diagonalPx = context.diagonal;
+Size size = context.sizePx;
+double width = context.widthPx;
+double height = context.heightPx;
+double diagonalPx = context.diagonalPx;
 //INCHES
 Size sizeInInches = context.sizeInches;
 double widthInInches = context.widthInches;
