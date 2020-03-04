@@ -17,7 +17,7 @@ bool useSingleColumn = context.widthPx < 400; //Access .width and .height direct
 ## 🎖 Installation
 ```yaml
 dependencies:
-  sized_context: "^0.0.1"
+  sized_context: ^0.0.1
 ```
 
 ### ⚡ Import
