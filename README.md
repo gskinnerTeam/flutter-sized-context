@@ -23,7 +23,7 @@ dependencies:
 ### ⚡ Import
 
 ```dart
-import 'package:media_query_context/media_query_context.dart';
+import 'package:sized_context/sized_context.dart';
 ```
 
 ## 🎮 Usage
