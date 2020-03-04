@@ -55,7 +55,7 @@ If you encounter any problems feel open an issue. If you feel the library is mis
 
 ## 👏 Inspiration
 
-- Thanks to reddit user *der_kobold* for the inspiration!
+- Thanks to reddit user *der_kobold* for the idea to turn this into an extension!
 
 ## ⭐ License
 
