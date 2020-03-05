@@ -17,7 +17,7 @@ bool useSingleColumn = context.widthPx < 400; //Access .width and .height direct
 ## 🎖 Installation
 ```yaml
 dependencies:
-  sized_context: ^0.0.1
+  sized_context: ^0.1.2
 ```
 
 ### ⚡ Import
@@ -51,9 +51,9 @@ Size safeSize = context.mq.removePadding();
 
 ## 🐛 Bugs/Requests
 
-If you encounter any problems feel open an issue. If you feel the library is missing a feature, please raise a ticket on Github and we'll look into it. Pull request are also welcome.
+If you encounter any problems please open an issue. If you feel the library is missing a feature, please raise a ticket on Github and we'll look into it. Pull request are welcome.
 
-## 👏 Inspiration
+## 👏 Thanks
 
 - Thanks to reddit user *der_kobold* for the idea to turn this into an extension!
 
