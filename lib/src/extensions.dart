@@ -28,4 +28,24 @@ extension SizedContext on BuildContext {
   double get widthInches => sizeInches.width;
   double get heightInches => sizeInches.height;
   double get diagonalInches => diagonalPx / 96;
+  
+  double wp(percentage) => percentage / 100 * widthPx;
+  double hp(percentage) => percentage / 100 * heightPx;
+  double get textSizeMultiplier => heightPx / 100.0;
+  double get imageSizeMultiplier => widthPx / 100.0;
+  double get heightMultiplier => heightPx / 100.0;
+  double get widgthMultiplier => widthPx / 100.0;
+
+  ScreenType get deviceType {
+    double deviceWidth = 0;
+    if (mq.orientation == Orientation.landscape)
+      deviceWidth = heightPx;
+    else
+      deviceWidth = widthPx;
+    if (deviceWidth > 950) return ScreenType.Desktop;
+    if (deviceWidth > 600) return ScreenType.Tablet;
+    return ScreenType.Mobile;
+  }
 }
+
+enum ScreenType { Mobile, Tablet, Desktop }
