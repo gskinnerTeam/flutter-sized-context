@@ -12,7 +12,7 @@ It also provides additional convenience methods like landscape state, diagonal s
 bool isLandscape = context.isLandscape; //Instead of: MediaQuery.of(context).orientation == Orientation.landscape
 bool isTablet = context.diagonalInches >= 7; //Get physical device size in inches 
 bool useSingleColumn = context.widthPx < 400; //Access .width and .height directly, no need to go through .size
-double sidePadding = context.widthPercent(11.0); //Use percentages of width or height for sizing
+double sidePadding = context.widthPercent(0.1); //Use percentages of width or height for sizing
 ```
 
 ## 🔨 Installation
