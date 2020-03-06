@@ -32,6 +32,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.1.6"
+  universal_platform:
+    dependency: "direct main"
+    description:
+      name: universal_platform
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.1.2+1"
   vector_math:
     dependency: transitive
     description:

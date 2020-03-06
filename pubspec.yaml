@@ -10,3 +10,5 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+
+  universal_platform: ^0.1.2
