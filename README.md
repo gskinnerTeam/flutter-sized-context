@@ -1,4 +1,4 @@
-# ✥ Sized Context
+# ✥ Sized Context - Easy responsive sizing
 
 With this extension package you can easily access the MediaQuery sizing info directly on the build context:
 
@@ -11,22 +11,21 @@ It also provides additional convenience methods like landscape state, diagonal s
 ```dart
 bool isLandscape = context.isLandscape; //Instead of: MediaQuery.of(context).orientation == Orientation.landscape
 bool isTablet = context.diagonalInches >= 7; //Get physical device size in inches 
-bool useSingleColumn = context.widthPx < 400; //Access .width and .height directly, no need to go throug .size
+bool useSingleColumn = context.widthPx < 400; //Access .width and .height directly, no need to go through .size
 ```
 
-## 🎖 Installation
+## 🔨 Installation
 ```yaml
 dependencies:
   sized_context: ^0.1.2
-```
 
-### ⚡ Import
+### ⚙ Import
 
 ```dart
 import 'package:sized_context/sized_context.dart';
 ```
 
-## 🎮 Usage
+## 🕹️ Usage
 
 ```dart
 bool isLandscape = context.isLandscape;
@@ -49,7 +48,7 @@ EdgeInsets padding = context.mq.padding;
 Size safeSize = context.mq.removePadding();
 ```
 
-## 🐛 Bugs/Requests
+## 🐞 Bugs/Requests
 
 If you encounter any problems please open an issue. If you feel the library is missing a feature, please raise a ticket on Github and we'll look into it. Pull request are welcome.
 
@@ -57,6 +56,6 @@ If you encounter any problems please open an issue. If you feel the library is m
 
 - Thanks to reddit user *der_kobold* for the idea to turn this into an extension!
 
-## ⭐ License
+## 📃 License
 
 MIT License

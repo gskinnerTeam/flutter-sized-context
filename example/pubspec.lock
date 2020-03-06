@@ -26,7 +26,7 @@ packages:
       path: ".."
       relative: true
     source: path
-    version: "0.0.1"
+    version: "0.1.2"
   sky_engine:
     dependency: transitive
     description: flutter
@@ -39,6 +39,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.1.6"
+  universal_platform:
+    dependency: transitive
+    description:
+      name: universal_platform
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.1.2+1"
   vector_math:
     dependency: transitive
     description:
