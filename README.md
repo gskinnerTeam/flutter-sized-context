@@ -19,6 +19,7 @@ double sidePadding = context.widthPercent(11.0); //Use percentages of width or h
 ```yaml
 dependencies:
   sized_context: ^0.2.0
+```
 
 ### ⚙ Import
 
