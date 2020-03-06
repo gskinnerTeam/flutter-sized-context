@@ -41,10 +41,10 @@ extension SizedContext on BuildContext {
   double get diagonalInches => diagonalPx / 96;
 
   /// Returns percentage (1-100) of screen width
-  double wp(double percentage) => percentage / 100 * widthPx;
+  double widthPercent(double percentage) => percentage / 100 * widthPx;
   
   /// Returns percentage (1-100) of screen height
-  double hp(double percentage) => percentage / 100 * heightPx;
+  double heightPercent(double percentage) => percentage / 100 * heightPx;
   
   /// Ratio multiplier for text size (height / 100)
   double get textSizeMultiplier => heightPx / 100.0;
@@ -56,10 +56,10 @@ extension SizedContext on BuildContext {
   double get heightMultiplier => heightPx / 100.0;
   
   /// Ratio multiplier of screen width (width / 100)
-  double get widgthMultiplier => widthPx / 100.0;
+  double get widthMultiplier => widthPx / 100.0;
 
   /// Returns the device ScreenType of Mobile, Tablet or Desktop
-  ScreenType get deviceType {
+  ScreenType get screenType {
     double deviceWidth = isLandscape ? heightPx : widthPx;
     if (deviceWidth > 950) return ScreenType.Desktop;
     if (deviceWidth > 600) return ScreenType.Tablet;
