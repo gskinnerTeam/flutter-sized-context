@@ -4,44 +4,49 @@ import 'package:flutter/material.dart';
 import 'package:universal_platform/universal_platform.dart';
 
 extension SizedContext on BuildContext {
-
+  
   double get pixelsPerInch => UniversalPlatform.isAndroid || UniversalPlatform.isIOS? 150 : 96;
-
-  /// The MediaQueryData object for this context
+  
+  /// Returns same as MediaQuery.of(context)
   MediaQueryData get mq => MediaQuery.of(this);
 
-  /// Whether current aspect ratio is landscape
+  /// Returns if Orientation is landscape
   bool get isLandscape => mq.orientation == Orientation.landscape;
 
-  //PIXELS
-  /// Screen size, in logical pixels
+  /// Returns same as MediaQuery.of(context).size
   Size get sizePx => mq.size;
-
-  /// Screen width, in logical pixels
+  
+  /// Returns same as MediaQuery.of(context).size.width
   double get widthPx => sizePx.width;
-
-  /// Screen height, in logical pixels
+  
+  /// Returns same as MediaQuery.of(context).height
   double get heightPx => sizePx.height;
 
-  /// Diagonal screen length, in logical pixels
+  /// Returns diagonal screen pixels
   double get diagonalPx {
     final Size s = sizePx;
     return sqrt((s.width * s.width) + (s.height * s.height));
   }
 
-  //PIXELS
-  /// Screen Size(), in inches
+  /// Returns pixel size in Inches
   Size get sizeInches {
     final Size pxSize = sizePx;
     return Size(pxSize.width / pixelsPerInch, pxSize.height / pixelsPerInch);
   }
 
-  /// Screen width, in inches
+  /// Returns screen width in Inches
   double get widthInches => sizeInches.width;
 
-  /// Screen height, in inches
+  /// Returns screen height in Inches
   double get heightInches => sizeInches.height;
 
-  /// Diagonal screen length, in inches
-  double get diagonalInches => diagonalPx / pixelsPerInch;
+  /// Returns screen diagonal in Inches
+  double get diagonalInches => diagonalPx / 96;
+
+  /// Returns fraction (0-1) of screen width in pixels
+  double widthFraction(double fraction) => percentage * widthPx;
+  
+  /// Returns fraction (0-1) of screen height in pixels
+  double heightFraction(double fraction) => percentage * heightPx;
+
 }
