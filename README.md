@@ -42,8 +42,8 @@ double widthInInches = context.widthInches;
 double heightInInches = context.heightInches;
 double diagonalInInches = context.diagonalInches;
 //RESPONSIVE HELPERS
-double widthPercent = context.widthPercent(10);
-double heightPercent = context.heightPercent(25);
+double widthPercent = context.widthPercent(.1);
+double heightPercent = context.heightPercent(.25);
 ```
 
 For convenience you can also access the MediaQueryData object directly, to get any other methods or properties:
