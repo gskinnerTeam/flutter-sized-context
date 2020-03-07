@@ -6,7 +6,7 @@ With this extension package you can easily access the MediaQuery sizing info dir
 Size size = context.sizePx;
 ```
 
-It also provides additional convenience methods like landscape state, diagonal screen size, inch-based measurements, screen type, width & height percentage, and ratio multipliers for textSize & imageSize:
+It also provides additional convenience methods like landscape state, diagonal screen size, inch-based measurements, screen type and percentage values:
 
 ```dart
 bool isLandscape = context.isLandscape; //Instead of: MediaQuery.of(context).orientation == Orientation.landscape
