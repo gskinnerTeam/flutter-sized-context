@@ -18,7 +18,7 @@ double sidePadding = context.widthPercent(0.1); //Use percentages of width or he
 ## 🔨 Installation
 ```yaml
 dependencies:
-  sized_context: ^0.2.0
+  sized_context: ^0.2.1
 ```
 
 ### ⚙ Import
@@ -41,9 +41,9 @@ Size sizeInInches = context.sizeInches;
 double widthInInches = context.widthInches;
 double heightInInches = context.heightInches;
 double diagonalInInches = context.diagonalInches;
-//RESPONSIVE HELPERS
-double widthPercent = context.widthPercent(.1);
-double heightPercent = context.heightPercent(.25);
+//PERCENTAGE
+double widthPercent = context.widthPct(.1);
+double heightPercent = context.heightPct(.25);
 ```
 
 For convenience you can also access the MediaQueryData object directly, to get any other methods or properties:
