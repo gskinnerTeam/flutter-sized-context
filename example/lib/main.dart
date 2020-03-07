@@ -22,6 +22,8 @@ class Demo extends StatelessWidget {
         "${context.widthInches},\n"
         "${context.heightInches},\n"
         "${context.diagonalInches},\n"
+        "${context.widthPct(.1)},\n"
+        "${context.heightPct(.1)},\n"
         "${context.sizeInches},\n"
         "${context.mq.padding},\n",
       )),
