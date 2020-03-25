@@ -41,7 +41,7 @@ extension SizedContext on BuildContext {
   double get heightInches => sizeInches.height;
 
   /// Returns screen diagonal in Inches
-  double get diagonalInches => diagonalPx / 96;
+  double get diagonalInches => diagonalPx / pixelsPerInch;
 
   /// Returns fraction (0-1) of screen width in pixels
   double widthPct(double fraction) => fraction * widthPx;

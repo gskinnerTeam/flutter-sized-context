@@ -1,3 +1,7 @@
+## 0.2.1+1
+
+- Fixed bug for diagonal inches
+
 ## 0.2.1
 
 - Refactored percent api to: pctWidth and pctHeight
