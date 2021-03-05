@@ -1,5 +1,7 @@
-## 0.2.1+1
+# 1.0.0-nullsafety
+- Migrate to nnbd
 
+## 0.2.1+1
 - Fixed bug for diagonal inches
 
 ## 0.2.1
