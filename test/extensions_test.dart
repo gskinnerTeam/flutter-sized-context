@@ -44,8 +44,7 @@ void main() {
       expect(_context.mq, isA<MediaQueryData>());
     });
 
-    testWidgets('should return true if orientation is landscape.',
-        (WidgetTester tester) async {
+    testWidgets('should return true if orientation is landscape.', (WidgetTester tester) async {
       late BuildContext _context;
 
       await tester.pumpWidget(
@@ -63,8 +62,7 @@ void main() {
       expect(_context.isLandscape, isTrue);
     });
 
-    testWidgets('should return screen size in pixels.',
-        (WidgetTester tester) async {
+    testWidgets('should return screen size in pixels.', (WidgetTester tester) async {
       late BuildContext _context;
 
       await tester.pumpWidget(
@@ -82,8 +80,7 @@ void main() {
       expect(_context.sizePx, const Size(800, 600));
     });
 
-    testWidgets('should return screen width in pixels.',
-        (WidgetTester tester) async {
+    testWidgets('should return screen width in pixels.', (WidgetTester tester) async {
       late BuildContext _context;
 
       await tester.pumpWidget(
@@ -101,8 +98,7 @@ void main() {
       expect(_context.widthPx, 800);
     });
 
-    testWidgets('should return screen height in pixels.',
-        (WidgetTester tester) async {
+    testWidgets('should return screen height in pixels.', (WidgetTester tester) async {
       late BuildContext _context;
 
       await tester.pumpWidget(
@@ -120,8 +116,7 @@ void main() {
       expect(_context.heightPx, 600);
     });
 
-    testWidgets('should return screen diagonal in pixels.',
-        (WidgetTester tester) async {
+    testWidgets('should return screen diagonal in pixels.', (WidgetTester tester) async {
       late BuildContext _context;
 
       await tester.pumpWidget(
@@ -139,8 +134,7 @@ void main() {
       expect(_context.diagonalPx, 1000.0);
     });
 
-    testWidgets('should return screen width in inches.',
-        (WidgetTester tester) async {
+    testWidgets('should return screen width in inches.', (WidgetTester tester) async {
       late BuildContext _context;
 
       await tester.pumpWidget(
@@ -158,8 +152,7 @@ void main() {
       expect(_context.widthInches, closeTo(8.3333, 1e-4));
     });
 
-    testWidgets('should return screen height in inches.',
-        (WidgetTester tester) async {
+    testWidgets('should return screen height in inches.', (WidgetTester tester) async {
       late BuildContext _context;
 
       await tester.pumpWidget(
@@ -177,8 +170,7 @@ void main() {
       expect(_context.heightInches, 6.25);
     });
 
-    testWidgets('should return screen diagonal in inches.',
-        (WidgetTester tester) async {
+    testWidgets('should return screen diagonal in inches.', (WidgetTester tester) async {
       late BuildContext _context;
 
       await tester.pumpWidget(
@@ -196,8 +188,7 @@ void main() {
       expect(_context.diagonalInches, closeTo(10.4166, 1e-4));
     });
 
-    testWidgets('should return a fraction of screen width in pixels.',
-        (WidgetTester tester) async {
+    testWidgets('should return a fraction of screen width in pixels.', (WidgetTester tester) async {
       late BuildContext _context;
 
       await tester.pumpWidget(
@@ -214,8 +205,7 @@ void main() {
       expect(_context.widthPct(0.5), 400);
     });
 
-    testWidgets('should return a fraction of screen height in pixels.',
-        (WidgetTester tester) async {
+    testWidgets('should return a fraction of screen height in pixels.', (WidgetTester tester) async {
       late BuildContext _context;
 
       await tester.pumpWidget(

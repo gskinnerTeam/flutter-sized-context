@@ -1,3 +1,8 @@
+# 1.0.2
+- Add tests
+- Update linter rules
+
+
 # 1.0.0-nullsafety
 - Migrate to nnbd
 
