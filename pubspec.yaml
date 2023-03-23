@@ -1,13 +1,18 @@
 name: sized_context
 description: Access MediaQuery sizing info directly on the context, also adds some helper methods for sizing and layout.
+
 version: 1.0.0-nullsafety
 homepage: https://github.com/gskinnerTeam/flutter-sized-context
 
 environment:
-  sdk: '>=2.12.0 <3.0.0'
+  sdk: ">=2.12.0 <3.0.0"
 
 dependencies:
   flutter:
     sdk: flutter
 
   universal_platform: ^1.0.0-nullsafety
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
